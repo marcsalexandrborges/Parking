@@ -29,6 +29,12 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
+task.jar {
+	manifest{
+		attributes["Main-Class"]= "me.dio.EstacionamentoApplication"
+	}
+}
+
 tasks.named('test') {
 	useJUnitPlatform()
 }
