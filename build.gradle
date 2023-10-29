@@ -29,7 +29,7 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
-task.jar {
+tasks.jar {
 	manifest{
 		attributes["Main-Class"]= "me.dio.EstacionamentoApplication"
 	}
